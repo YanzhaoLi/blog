@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cka on Yanzhao Li</title>
+    <link>https://example.org/tags/cka/</link>
+    <description>Recent content in cka on Yanzhao Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/cka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes TLS Bootstrap</title>
+      <link>https://example.org/2019/10/kubernetes-tls-bootstrap/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/2019/10/kubernetes-tls-bootstrap/</guid>
+      <description>&lt;p&gt;Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

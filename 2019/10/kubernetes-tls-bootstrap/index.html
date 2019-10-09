@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.58.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="Yanzhao Li">
+<meta name="keywords" content="">
+<meta name="description" content="Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目">
+
+
+<meta property="og:description" content="Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kubernetes TLS Bootstrap">
+<meta name="twitter:title" content="Kubernetes TLS Bootstrap">
+<meta property="og:url" content="https://example.org/2019/10/kubernetes-tls-bootstrap/">
+<meta property="twitter:url" content="https://example.org/2019/10/kubernetes-tls-bootstrap/">
+<meta property="og:site_name" content="Yanzhao Li">
+<meta property="og:description" content="Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目">
+<meta name="twitter:description" content="Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-10-09T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-10-09T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="k8s">
+    
+      <meta property="article:section" content="dev">
+    
+  
+  
+    
+      <meta property="article:tag" content="k8s">
+    
+      <meta property="article:tag" content="cka">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@YanzhaoLi">
+
+
+  <meta name="twitter:creator" content="@YanzhaoLi">
+
+
+
+
+
+
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg">
+
+
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg">
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/482fe4a53b3c79977e44c3be64cf4268?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/482fe4a53b3c79977e44c3be64cf4268?s=640">
+
+
+    <title>Kubernetes TLS Bootstrap</title>
+
+    <link rel="icon" href="https://example.org/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://example.org/2019/10/kubernetes-tls-bootstrap/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://example.org/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://example.org/">Yanzhao Li</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://example.org/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/482fe4a53b3c79977e44c3be64cf4268?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://example.org/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/482fe4a53b3c79977e44c3be64cf4268?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yanzhao Li</h4>
+        
+          <h5 class="sidebar-profile-bio">A developer working around Kubernetes</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yanzhaoli" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg')"
+       data-behavior="4">
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaOut
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      Kubernetes TLS Bootstrap
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-10-09T00:00:00Z">
+        
+  October 9, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/k8s">k8s</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/dev">dev</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目</p>
+
+<h2 id="q-a">Q&amp;A</h2>
+
+<ol>
+<li><code>bootstrap-kubeconfig</code>是怎么生成的，里面包含了啥
+
+<ul>
+<li>不知道咋生成的</li>
+<li>apiserver url 和 token</li>
+</ul></li>
+<li>创建CSR
+
+<ul>
+<li>需要管理员参与么？还是kubelet自己就会</li>
+</ul></li>
+<li>同意该CSR
+
+<ul>
+<li>如何配置才能默认让controller-manager同意</li>
+<li>手动使用kubectl怎么同意</li>
+</ul></li>
+<li>apiserver得给kubelet权限
+
+<ul>
+<li><code>--enable-bootstrap-token-auth=true</code></li>
+<li>怎么使用token授权？让其进入system:bootstrapers权限</li>
+<li>使用RoleBinding给kubelet权限来创建CSR</li>
+</ul></li>
+<li>如何创建 token呢？
+
+<ul>
+<li>第一种是普通token，按照&ndash;token-auth-file的形式</li>
+<li>第二种是bootstrap token，是一个特殊的secret</li>
+</ul></li>
+<li>kubelet的参数怎么配置呢？
+
+<ul>
+<li>不知道</li>
+<li>使用bootstrap token是否和使用普通token一样呢</li>
+</ul></li>
+</ol>
+
+<h1 id="做题流程">做题流程</h1>
+
+<h4 id="选择方法">选择方法</h4>
+
+<ol>
+<li>是否有kubeadm，如果有选择kubeadm的方法，该方法会使用bootstrp token的方式</li>
+<li>检查kube-apiserver参数是否支持了<code>--enable-bootstrap-token-auth=true</code>，若支持了，则采用bootstrap token的模式</li>
+<li>否则，采用普通token的认证方式<code>--token-auth-file=FILENAME</code></li>
+</ol>
+
+<h4 id="安装bin">安装bin</h4>
+
+<p><a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/">https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/</a></p>
+
+<pre><code class="language-sh">apt-get update &amp;&amp; apt-get install -y apt-transport-https curl
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat &lt;&lt;EOF &gt;/etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+apt-mark hold kubelet kubeadm kubectl
+</code></pre>
+
+<h2 id="kubeadm-启动">kubeadm 启动</h2>
+
+<p><a href="https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/">查看kubeadm init创建的token，是否过期了</a></p>
+
+<pre><code class="language-sh">kubeadm token list
+</code></pre>
+
+<p><a href="https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/">kubeadm join 三种模式</a>
+1. <code>kubeadm join -–discovery-token abcdef.1234567890abcdef apiserver_ip:6443</code>
+2. <code>kubeadm join -–discovery-file path/to/file.conf</code>
+3. <code>kubeadm join -–discovery-file https://url/file.conf</code></p>
+
+<h4 id="kubeadm-join">kubeadm join</h4>
+
+<p>计算sha256的$hash用于验证CA，这是第一种模式必须的</p>
+
+<pre><code class="language-sh"># 计算CA的hash，kubeadm init也会自动输出
+openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2&gt;/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
+</code></pre>
+
+<p>创建用于discovery和tlsbootstrap的token，这两个过程公用一个$token</p>
+
+<pre><code class="language-sh">kubeadm token create
+# generate一个符合格式的token，并创建合法的secret
+</code></pre>
+
+<p>执行Join</p>
+
+<pre><code class="language-sh">kubeadm join --discovery-token $token --discovery-token-ca-cert-hash sha256:$hash  $apiserver_ip:6443
+</code></pre>
+
+<h2 id="bootstrap-token-启动">bootstrap token 启动</h2>
+
+<ul>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/">tls bootstrap</a></li>
+<li><a href="https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/">bootstrap token</a></li>
+</ul>
+
+<h4 id="准备bootstrap-token">准备bootstrap token</h4>
+
+<p>要求：名字有特殊规定<code>bootstrap-token-&lt;token id&gt;</code>，存在于kube-system中的secret</p>
+
+<ol>
+<li><p>检查是否已经有bootstrap token了</p>
+
+<pre><code class="language-sh">kubectl get secret -n kube-system | grep &quot;bootstrap-token-&quot;
+</code></pre></li>
+
+<li><p>创建一个bootstrap token</p></li>
+
+<li><p>格式： <code>[a-z0-9]{6}\.[a-z0-9]{16}</code></p></li>
+
+<li><p>example: <code>abcdef.$(head -c 8 /dev/random | od -An -t x | tr -d ' ')</code></p></li>
+
+<li><p>example: <code>kubeadm generate token</code>仅输出符合格式的token</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+kind: Secret
+metadata:
+# Name MUST be of form &quot;bootstrap-token-&lt;token id&gt;&quot;
+name: bootstrap-token-07401b
+namespace: kube-system
+
+# Type MUST be 'bootstrap.kubernetes.io/token'
+type: bootstrap.kubernetes.io/token
+stringData:
+# Human readable description. Optional.
+description: &quot;The default bootstrap token generated by 'kubeadm init'.&quot;
+
+# Token ID and secret. Required.
+token-id: abcdef
+token-secret: f395accd246ae52d
+
+# Expiration. Optional.
+# expiration: 2017-03-10T03:22:11Z
+
+# Allowed usages.
+usage-bootstrap-authentication: &quot;true&quot;
+usage-bootstrap-signing: &quot;true&quot;
+
+# Extra groups to authenticate the token as. Must start with &quot;system:bootstrappers:&quot;
+auth-extra-groups: system:bootstrappers:worker,system:bootstrappers:ingress
+</code></pre></li>
+</ol>
+
+<h4 id="准备bootstrap-kubeconfig">准备bootstrap-kubeconfig</h4>
+
+<ul>
+<li>从master上copy过来ca.pem</li>
+
+<li><p>使用之前创建好的bootstrap-token</p>
+
+<pre><code class="language-yaml">#/var/lib/kubelet/bootstrap-kubeconfig
+apiVersion: v1
+kind: Config
+clusters:
+- cluster:
+certificate-authority: /var/lib/kubernetes/ca.pem
+server: https://my.server.example.com:6443
+name: bootstrap
+contexts:
+- context:
+cluster: bootstrap
+user: kubelet-bootstrap
+name: bootstrap
+current-context: bootstrap
+preferences: {}
+users:
+- name: kubelet-bootstrap
+user:
+token: 07401b.f395accd246ae52d
+# 使用之前创建好的token
+</code></pre></li>
+</ul>
+
+<h4 id="准备clusterrolebinding">准备ClusterRoleBinding</h4>
+
+<p>1.8之后的版本系统都默认创建了一些ClusterRole，我们只需要绑定到<code>system:bootstrappers</code>这个Group上就行了</p>
+
+<ul>
+<li><code>system:node-bootstrapper</code>
+
+<ul>
+<li>具备申请CSR的权限
+<br /></li>
+</ul></li>
+</ul>
+
+<p>下面两个是用于自动approve的，也就是只要有权限，就会自动approve
+- <code>system:certificates.k8s.io:certificatesigningrequests:nodeclient</code>
+  - 具备创建certificates的权限
+- <code>system:certificates.k8s.io:certificatesigningrequests:selfnodeclient</code>
+  - 具备更新certificates的权限，所以这个绑定到<code>system:nodes</code>上</p>
+
+<p>或者可以选择手动approve，<code>kubectl get csr</code>,<code>kubectl certificate approve &lt;name&gt;</code></p>
+
+<pre><code class="language-yaml">---
+# enable bootstrapping nodes to create CSR
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: create-csrs-for-bootstrapping
+subjects:
+- kind: Group
+  name: system:bootstrappers
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: system:node-bootstrapper
+  apiGroup: rbac.authorization.k8s.io
+---
+# Approve all CSRs for the group &quot;system:bootstrappers&quot;
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: auto-approve-csrs-for-group
+subjects:
+- kind: Group
+  name: system:bootstrappers
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: system:certificates.k8s.io:certificatesigningrequests:nodeclient
+  apiGroup: rbac.authorization.k8s.io
+---
+# Approve renewal CSRs for the group &quot;system:nodes&quot;
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: auto-approve-renewals-for-nodes
+subjects:
+- kind: Group
+  name: system:nodes
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: system:certificates.k8s.io:certificatesigningrequests:selfnodeclient
+  apiGroup: rbac.authorization.k8s.io
+</code></pre>
+
+<h4 id="配置kubelet参数">配置kubelet参数</h4>
+
+<pre><code class="language-sh"># /lib/systemd/system/kubelet.service
+--bootstrap-kubeconfig=&quot;/var/lib/kubelet/bootstrap-kubeconfig&quot; --kubeconfig=&quot;/var/lib/kubelet/kubeconfig&quot;
+</code></pre>
+
+<pre><code class="language-sh">swapoff -a
+systemctl daemon-reload
+systemctl restart kubelet
+systemctl status kubelet
+# 这步可以看到是否加载了你的参数，有时候会从/etc/systemd/system/kubelet.service.d 读取
+kubectl get nodes
+kubectl get csr
+</code></pre>
+
+<h2 id="普通-token-启动">普通 token 启动</h2>
+
+<h4 id="准备token">准备token</h4>
+
+<pre><code class="language-sh">token=$(head -c 16 /dev/random | od -An -t x | tr -d ' ')
+</code></pre>
+
+<h4 id="apiserver接收token">apiserver接收token</h4>
+
+<pre><code class="language-sh">cat &lt;&lt;EOF&gt;&gt; tokenfile
+$token,kubelet-bootstrap,10001,&quot;system:bootstrappers&quot;
+EOF
+</code></pre>
+
+<pre><code class="language-sh"># apiserver
+--token-auth-file=tokenfile
+</code></pre>
+
+<h4 id="其余都一样">其余都一样</h4>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/k8s/">k8s</a>
+
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/cka/">cka</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2019/10/kubernetes-notes-drafted/" data-tooltip="Kubernetes Notes Drafted">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2015/06/welcome-to-tranquilpeak-0.4.7-beta/" data-tooltip="Welcome to Tranquilpeak 0.4.7-BETA">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2019/10/kubernetes-tls-bootstrap/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2019/10/kubernetes-tls-bootstrap/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Yanzhao Li. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2019/10/kubernetes-notes-drafted/" data-tooltip="Kubernetes Notes Drafted">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2015/06/welcome-to-tranquilpeak-0.4.7-beta/" data-tooltip="Welcome to Tranquilpeak 0.4.7-BETA">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2019/10/kubernetes-tls-bootstrap/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2019/10/kubernetes-tls-bootstrap/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.org%2F2019%2F10%2Fkubernetes-tls-bootstrap%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fexample.org%2F2019%2F10%2Fkubernetes-tls-bootstrap%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/482fe4a53b3c79977e44c3be64cf4268?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yanzhao Li</h4>
+    
+      <div id="about-card-bio">A developer working around Kubernetes</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Software Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://example.org/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://example.org/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/example.org\/2019\/10\/kubernetes-tls-bootstrap\/';
+          
+            this.page.identifier = '\/2019\/10\/kubernetes-tls-bootstrap\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
