@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc on Yanzhao Li</title>
-    <link>https://yanzhaoli.github.io/categories/misc/</link>
+    <link>https://yanzhaoli.github.io/blog/categories/misc/</link>
     <description>Recent content in misc on Yanzhao Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yanzhaoli.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yanzhaoli.github.io/blog/categories/misc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Useful Link Draft</title>
-      <link>https://yanzhaoli.github.io/2018/10/useful-link-draft/</link>
+      <link>https://yanzhaoli.github.io/blog/2018/10/useful-link-draft/</link>
       <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/2018/10/useful-link-draft/</guid>
+      <guid>https://yanzhaoli.github.io/blog/2018/10/useful-link-draft/</guid>
       <description>&lt;p&gt;Drafted Useful Links&lt;/p&gt;</description>
     </item>
     

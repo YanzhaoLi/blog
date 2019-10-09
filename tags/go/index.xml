@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Yanzhao Li</title>
-    <link>https://yanzhaoli.github.io/tags/go/</link>
+    <link>https://yanzhaoli.github.io/blog/tags/go/</link>
     <description>Recent content in Go on Yanzhao Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yanzhaoli.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yanzhaoli.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Golang Notes</title>
-      <link>https://yanzhaoli.github.io/2018/10/golang-notes/</link>
+      <link>https://yanzhaoli.github.io/blog/2018/10/golang-notes/</link>
       <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/2018/10/golang-notes/</guid>
+      <guid>https://yanzhaoli.github.io/blog/2018/10/golang-notes/</guid>
       <description>&lt;p&gt;我之前总结的Golang的一些notes，先暂时放在这里吧&lt;/p&gt;</description>
     </item>
     

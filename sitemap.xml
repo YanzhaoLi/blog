@@ -1,309 +1,309 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/cka/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/cka/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/dev/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/dev/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/k8s/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/k8s/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/k8s/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/k8s/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2019/10/kubernetes-tls-bootstrap/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2019/10/kubernetes-tls-bootstrap/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/post/</loc>
+    <loc>https://yanzhaoli.github.io/blog/post/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/</loc>
+    <loc>https://yanzhaoli.github.io/blog/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/go/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/go/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/golang/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/golang/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/golang/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/golang/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2018/10/golang-notes/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2018/10/golang-notes/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2018/10/kubernetes-notes-drafted/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2018/10/kubernetes-notes-drafted/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/misc/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/misc/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/misc/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/misc/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/shell/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/shell/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/shell/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/shell/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2018/10/shell-notes/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2018/10/shell-notes/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2018/10/useful-link-draft/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2018/10/useful-link-draft/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/disqus/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/disqus/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/google-analytics/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/google-analytics/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/gravatar/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/gravatar/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/hexo-theme/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/hexo-theme/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/releases/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/releases/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/responsive/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/responsive/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/tranquilpeak/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/tranquilpeak/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2015/06/welcome-to-tranquilpeak-0.4.7-beta/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2015/06/welcome-to-tranquilpeak-0.4.7-beta/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/showcase/</loc>
     <lastmod>2015-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2015/06/who-is-using-tranquilpeak-hugo-theme/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2015/06/who-is-using-tranquilpeak-hugo-theme/</loc>
     <lastmod>2015-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2015/05/elements-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2015/05/elements-showcase/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/features/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/features/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/html-elements/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/html-elements/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/life/</loc>
+    <loc>https://yanzhaoli.github.io/blog/categories/life/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/categories/life/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/life/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2015/05/life-activites-draft/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2015/05/life-activites-draft/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/markdown/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/markdown/</loc>
     <lastmod>2015-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/github-theme/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/github-theme/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/highlight-code/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/highlight-code/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2015/03/highlighted-code-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2015/03/highlighted-code-showcase/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/test/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/test/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/tag-plugins/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/tag-plugins/</loc>
     <lastmod>2014-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2014/10/tags-plugins-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2014/10/tags-plugins-showcase/</loc>
     <lastmod>2014-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2014/08/hidden-social-section-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2014/08/hidden-social-section-showcase/</loc>
     <lastmod>2014-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/social/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/social/</loc>
     <lastmod>2014-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2014/08/hidden-tag-section-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2014/08/hidden-tag-section-showcase/</loc>
     <lastmod>2014-08-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/tags/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/tags/</loc>
     <lastmod>2014-08-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2014/08/hidden-pagination-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2014/08/hidden-pagination-showcase/</loc>
     <lastmod>2014-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/pagination/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/pagination/</loc>
     <lastmod>2014-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/dailymotion/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/dailymotion/</loc>
     <lastmod>2014-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2014/08/video-integrations-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2014/08/video-integrations-showcase/</loc>
     <lastmod>2014-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/videos-integration/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/videos-integration/</loc>
     <lastmod>2014-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/vimeo/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/vimeo/</loc>
     <lastmod>2014-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/youtube/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/youtube/</loc>
     <lastmod>2014-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/chinese/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/chinese/</loc>
     <lastmod>2013-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2013/10/chinese-test/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2013/10/chinese-test/</loc>
     <lastmod>2013-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/image-gallery/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/image-gallery/</loc>
     <lastmod>2013-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2013/02/image-gallery-showcase/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2013/02/image-gallery-showcase/</loc>
     <lastmod>2013-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/tags/japanese/</loc>
+    <loc>https://yanzhaoli.github.io/blog/tags/japanese/</loc>
     <lastmod>2013-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/2013/01/japanese-test/</loc>
+    <loc>https://yanzhaoli.github.io/blog/2013/01/japanese-test/</loc>
     <lastmod>2013-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanzhaoli.github.io/archives/</loc>
+    <loc>https://yanzhaoli.github.io/blog/archives/</loc>
   </url>
   
 </urlset>
