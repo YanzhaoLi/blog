@@ -2,237 +2,264 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yanzhao Li</title>
-    <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/</link>
+    <link>https://yanzhaoli.github.io/tags/</link>
     <description>Recent content in Tags on Yanzhao Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yanzhaoli.github.io/yanzhao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yanzhaoli.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cka</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/cka/</link>
+      <link>https://yanzhaoli.github.io/tags/cka/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/cka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/go/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/golang/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/golang/</guid>
+      <guid>https://yanzhaoli.github.io/tags/cka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/k8s/</link>
+      <link>https://yanzhaoli.github.io/tags/k8s/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/k8s/</guid>
+      <guid>https://yanzhaoli.github.io/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://yanzhaoli.github.io/tags/go/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://yanzhaoli.github.io/tags/golang/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>https://yanzhaoli.github.io/tags/misc/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://yanzhaoli.github.io/tags/shell/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>disqus</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/disqus/</link>
+      <link>https://yanzhaoli.github.io/tags/disqus/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/disqus/</guid>
+      <guid>https://yanzhaoli.github.io/tags/disqus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google analytics</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/google-analytics/</link>
+      <link>https://yanzhaoli.github.io/tags/google-analytics/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/google-analytics/</guid>
+      <guid>https://yanzhaoli.github.io/tags/google-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gravatar</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/gravatar/</link>
+      <link>https://yanzhaoli.github.io/tags/gravatar/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/gravatar/</guid>
+      <guid>https://yanzhaoli.github.io/tags/gravatar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hexo theme</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/hexo-theme/</link>
+      <link>https://yanzhaoli.github.io/tags/hexo-theme/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/hexo-theme/</guid>
+      <guid>https://yanzhaoli.github.io/tags/hexo-theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>responsive</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/responsive/</link>
+      <link>https://yanzhaoli.github.io/tags/responsive/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/responsive/</guid>
+      <guid>https://yanzhaoli.github.io/tags/responsive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html elements</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/html-elements/</link>
+      <link>https://yanzhaoli.github.io/tags/html-elements/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/html-elements/</guid>
+      <guid>https://yanzhaoli.github.io/tags/html-elements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://yanzhaoli.github.io/tags/life/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/tags/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/markdown/</link>
+      <link>https://yanzhaoli.github.io/tags/markdown/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/markdown/</guid>
+      <guid>https://yanzhaoli.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github theme</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/github-theme/</link>
+      <link>https://yanzhaoli.github.io/tags/github-theme/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/github-theme/</guid>
+      <guid>https://yanzhaoli.github.io/tags/github-theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>highlight code</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/highlight-code/</link>
+      <link>https://yanzhaoli.github.io/tags/highlight-code/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/highlight-code/</guid>
+      <guid>https://yanzhaoli.github.io/tags/highlight-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/test/</link>
+      <link>https://yanzhaoli.github.io/tags/test/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/test/</guid>
+      <guid>https://yanzhaoli.github.io/tags/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tag plugins</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/tag-plugins/</link>
+      <link>https://yanzhaoli.github.io/tags/tag-plugins/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/tag-plugins/</guid>
+      <guid>https://yanzhaoli.github.io/tags/tag-plugins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>social</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/social/</link>
+      <link>https://yanzhaoli.github.io/tags/social/</link>
       <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/social/</guid>
+      <guid>https://yanzhaoli.github.io/tags/social/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tags</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/tags/</link>
+      <link>https://yanzhaoli.github.io/tags/tags/</link>
       <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/tags/</guid>
+      <guid>https://yanzhaoli.github.io/tags/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pagination</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/pagination/</link>
+      <link>https://yanzhaoli.github.io/tags/pagination/</link>
       <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/pagination/</guid>
+      <guid>https://yanzhaoli.github.io/tags/pagination/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dailymotion</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/dailymotion/</link>
+      <link>https://yanzhaoli.github.io/tags/dailymotion/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/dailymotion/</guid>
+      <guid>https://yanzhaoli.github.io/tags/dailymotion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>videos integration</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/videos-integration/</link>
+      <link>https://yanzhaoli.github.io/tags/videos-integration/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/videos-integration/</guid>
+      <guid>https://yanzhaoli.github.io/tags/videos-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vimeo</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/vimeo/</link>
+      <link>https://yanzhaoli.github.io/tags/vimeo/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/vimeo/</guid>
+      <guid>https://yanzhaoli.github.io/tags/vimeo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>youtube</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/youtube/</link>
+      <link>https://yanzhaoli.github.io/tags/youtube/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/youtube/</guid>
+      <guid>https://yanzhaoli.github.io/tags/youtube/</guid>
       <description></description>
     </item>
     
     <item>
       <title>chinese</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/chinese/</link>
+      <link>https://yanzhaoli.github.io/tags/chinese/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/chinese/</guid>
+      <guid>https://yanzhaoli.github.io/tags/chinese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image gallery</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/image-gallery/</link>
+      <link>https://yanzhaoli.github.io/tags/image-gallery/</link>
       <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/image-gallery/</guid>
+      <guid>https://yanzhaoli.github.io/tags/image-gallery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>japanese</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/tags/japanese/</link>
+      <link>https://yanzhaoli.github.io/tags/japanese/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/tags/japanese/</guid>
+      <guid>https://yanzhaoli.github.io/tags/japanese/</guid>
       <description></description>
     </item>
     

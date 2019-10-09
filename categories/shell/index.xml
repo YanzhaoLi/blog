@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Yanzhao Li</title>
+    <link>https://yanzhaoli.github.io/categories/shell/</link>
+    <description>Recent content in shell on Yanzhao Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yanzhaoli.github.io/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell Notes</title>
+      <link>https://yanzhaoli.github.io/2018/10/shell-notes/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/2018/10/shell-notes/</guid>
+      <description>&lt;p&gt;Shell notes 我总结的，未整理暂时先放在这里&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

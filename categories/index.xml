@@ -2,75 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Yanzhao Li</title>
-    <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/</link>
+    <link>https://yanzhaoli.github.io/categories/</link>
     <description>Recent content in Categories on Yanzhao Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yanzhaoli.github.io/yanzhao.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yanzhaoli.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dev</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/dev/</link>
+      <link>https://yanzhaoli.github.io/categories/dev/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/golang/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/golang/</guid>
+      <guid>https://yanzhaoli.github.io/categories/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/k8s/</link>
+      <link>https://yanzhaoli.github.io/categories/k8s/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/k8s/</guid>
+      <guid>https://yanzhaoli.github.io/categories/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://yanzhaoli.github.io/categories/golang/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>https://yanzhaoli.github.io/categories/misc/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/categories/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://yanzhaoli.github.io/categories/shell/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/categories/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>releases</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/releases/</link>
+      <link>https://yanzhaoli.github.io/categories/releases/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/releases/</guid>
+      <guid>https://yanzhaoli.github.io/categories/releases/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tranquilpeak</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/tranquilpeak/</link>
+      <link>https://yanzhaoli.github.io/categories/tranquilpeak/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/tranquilpeak/</guid>
+      <guid>https://yanzhaoli.github.io/categories/tranquilpeak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>showcase</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/showcase/</link>
+      <link>https://yanzhaoli.github.io/categories/showcase/</link>
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/showcase/</guid>
+      <guid>https://yanzhaoli.github.io/categories/showcase/</guid>
       <description></description>
     </item>
     
     <item>
       <title>features</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/features/</link>
+      <link>https://yanzhaoli.github.io/categories/features/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/categories/features/</guid>
+      <guid>https://yanzhaoli.github.io/categories/features/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://yanzhaoli.github.io/categories/life/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/categories/life/</guid>
       <description></description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>k8s on Yanzhao Li</title>
-    <link>https://yanzhaoli.github.io/yanzhao.github.io/categories/k8s/</link>
+    <link>https://yanzhaoli.github.io/categories/k8s/</link>
     <description>Recent content in k8s on Yanzhao Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yanzhaoli.github.io/yanzhao.github.io/categories/k8s/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yanzhaoli.github.io/categories/k8s/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Kubernetes Notes Drafted</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/2019/10/kubernetes-notes-drafted/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/2019/10/kubernetes-notes-drafted/</guid>
-      <description>&lt;p&gt;这是我之前总结的K8S的一些内容，还没进行系统的整理，先放着吧&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Kubernetes TLS Bootstrap</title>
-      <link>https://yanzhaoli.github.io/yanzhao.github.io/2019/10/kubernetes-tls-bootstrap/</link>
+      <link>https://yanzhaoli.github.io/2019/10/kubernetes-tls-bootstrap/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yanzhaoli.github.io/yanzhao.github.io/2019/10/kubernetes-tls-bootstrap/</guid>
+      <guid>https://yanzhaoli.github.io/2019/10/kubernetes-tls-bootstrap/</guid>
       <description>&lt;p&gt;Kubernetes TLS Bootstrap是CKA考试的一个模块，这里系统学习一下如何做这种题目&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Notes Drafted</title>
+      <link>https://yanzhaoli.github.io/2018/10/kubernetes-notes-drafted/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yanzhaoli.github.io/2018/10/kubernetes-notes-drafted/</guid>
+      <description>&lt;p&gt;这是我之前总结的K8S的一些内容，还没进行系统的整理，先放着吧&lt;/p&gt;</description>
     </item>
     
   </channel>
